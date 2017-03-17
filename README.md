@@ -20,3 +20,5 @@ TODO's and finished tasks can be found here: [GitHub projects](https://github.co
 
 ### Assignment - 1.2
 [Funda - Feature Check](https://github.com/dandevri/minor-bt/tree/master/assignment-1.2)
+
+[Notes from the articles](https://dandevri.gitbooks.io/minor-bt/content/resources.html)

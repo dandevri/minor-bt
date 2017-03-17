@@ -96,7 +96,6 @@ I'm finding some trouble to correctly use the Screen Reader but maybe that takes
 ![Screen Reader](img/15-screenreader.png)
 ![Screen Reader](img/16-screenreader.png)
 
-
 ## <a name="keyboard"></a> Device Lab Testing
 Most of the current smartphones handle the SPA pretty well. It was build mobile first en when you move to a tablet or desktop viewport everything gets centered. So that's not optimal but still pretty usable. On Internet Eplore the colors are broken, that's becuase I used CSS variables and haven't provided a fallback.
 
