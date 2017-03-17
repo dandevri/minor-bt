@@ -19,4 +19,4 @@ TODO's and finished tasks can be found here: [GitHub projects](https://github.co
 [Notes from the articles](https://dandevri.gitbooks.io/minor-bt/content/resources.html)
 
 ### Assignment - 1.2
-[Funda - Featurecheck]()
+[Funda - Feature Check](https://github.com/dandevri/minor-bt/tree/master/assignment-1.2)

@@ -1,4 +1,4 @@
-# Funda Featurecheck
+# Funda Feature Check
 
 This is a summary of the featurecheck I did on my own funda created for the Minor Web Development. I checked the app with 8 features that where discussed during the class *Browser Technologies*. All of them with a description of the feature and screenshots with the result.
 
@@ -15,6 +15,7 @@ This is a summary of the featurecheck I did on my own funda created for the Mino
 - [6. Cookies](#cookies)
 - [7. localStorage](#storage)
 - [8. Keyboard](#keyboard)
+- [Screen Reader](#screenreader)
 - [Device lab Testing](#devicelab)
 
 
@@ -81,6 +82,20 @@ I also added a anchor tag to the cards of the houses so that when the query has 
 
 ![Keyboard](img/9-keyboard.png)
 ![Keyboard](img/10-keyboard.png)
+
+## <a name="screenreader"></a> Screen Reader
+
+*The built in Voice over program in mac is pretty powerful. I've enabled the native voice over (screen reader) program in mac.*
+
+This topic is closely related to the previous keyboard use of the application. There is a bug in the radio buttons which doesn't let the user tab through the site very well. It reads all the input fields and links outloud which work pretty good. But...
+
+the reading of the DOM is a disaster. I disable the fieldsets using JavaScript but they are not removed from the DOM which causes the screen reader to read the whole quiz (whole DOM) instead of just one question.
+
+I'm finding some trouble to correctly use the Screen Reader but maybe that takes some googling. Now I have to use the mouse to let the Screen Reader read the headings an paragraphs and thay can be done through the keyboard.
+
+![Screen Reader](img/15-screenreader.png)
+![Screen Reader](img/16-screenreader.png)
+
 
 ## <a name="keyboard"></a> Device Lab Testing
 Most of the current smartphones handle the SPA pretty well. It was build mobile first en when you move to a tablet or desktop viewport everything gets centered. So that's not optimal but still pretty usable. On Internet Eplore the colors are broken, that's becuase I used CSS variables and haven't provided a fallback.
