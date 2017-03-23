@@ -1,5 +1,8 @@
 # Feature 1.
 
+## Demo
+[Link to live demo](https://dandevri.github.io/minor-bt/week-2/feature-1/feature-1.html)
+
 ## Description of the Feature
 The date input easily allows users to enter a date by using a calendar widget.
 
