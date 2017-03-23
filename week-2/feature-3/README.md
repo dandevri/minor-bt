@@ -1,5 +1,8 @@
 # Feature 3.
 
+## Demo
+[Link to live demo](https://dandevri.github.io/minor-bt/week-2/feature-3/feature-3.html)
+
 ## Description of the Feature
 In the new CSS module 4 a new 8-digit hex scheme is introduced to support alpha values. The value of alpha in the new hex notation would range from 00 to FF where 00 is the minimum value i.e 0% and FF is the max value which would be 100% opacity.
 
