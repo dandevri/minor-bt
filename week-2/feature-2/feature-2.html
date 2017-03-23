@@ -1,9 +1,20 @@
-# Feature 2.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2. Picture element</title>
+  </head>
+  <body>
 
-## Description of the Feature
+    <picture>
+      <source srcset="img/image.webp" type=image/webp>
+        <img
+          sizes="(max-width: 292px) 100vw, 292px"
+          srcset="
+            image_50.png 50w,
+            image_292.png 292w"
+          src="image.png">
+    </picture>
 
-## Fallback
-
-## Browser support
-
-## Resources
+  </body>
+</html>
