@@ -6,11 +6,16 @@
   </head>
 
   <body>
-    <p>Color input</p>
-    <input type="color" placeholder="hex value (#fffff)">
-    <p>Date input</p>
-    <input type="date" placeholder="dd-mm-yyyy">
-    <p>Time input</p>
-    <input type="time" placeholder="00:00">
+    <label>
+      Are you 18 years or older?
+      <input type="date" placeholder="dd-mm-yyyy">
+    </label>
+
+    <script>
+    if (document.querySelector('input').type === 'text') {
+      document.querySelector('label').innerHTML += "Fill in as dd-mm-yy";
+    }
+    </script>
+
   </body>
 </html>
