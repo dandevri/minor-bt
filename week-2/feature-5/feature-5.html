@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>5. Youtube video</title>
+  </head>
+  <body>
+    <a id="image" href="https://youtu.be/dQw4w9WgXcQ">
+      <img src="img/player.png">
+    </a>
+    <div id="video">
+    </div>
+  </body>
+  <script>
+    var removeImg = document.getElementById('image');
+    removeImg.parentNode.removeChild(image);
+
+    var addVideo = document.getElementById('video').innerHTML += `<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?ecver=2?rel=0&autoplay=1"frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>`;
+
+  </script>
+</html>
