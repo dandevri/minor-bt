@@ -1,3 +1,1 @@
 # Feature detection
-
-## 1. 
