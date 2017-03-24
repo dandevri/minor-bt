@@ -7,7 +7,7 @@ Find 6 features (HTML, CSS & JS) to research and build a fallback for that featu
 
 ### HTML | 1. Input type date
 The date input easily allows users to enter a date by using a calendar widget.
-* [Detailed description and code](week-2/feature-1)
+* [Detailed description and code](feature-1)
 * Live demo
 
 ### HTML | 2. Picture element
