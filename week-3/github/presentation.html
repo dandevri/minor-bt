@@ -4,16 +4,15 @@
     <title>Title</title>
     <meta charset="utf-8">
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
+      body { font-family: 'Roboto'; color: white; }
+
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-container { background-color: #0e4194; }
+      .remark-slide-content { background-color: #0e4194; }
+
     </style>
   </head>
   <body>
@@ -21,7 +20,8 @@
 
 class: center, middle
 
-# Title
+# Progressive Enhancement - Browser Technologies
+Danny de Vries - Minor Web Development
 
 ---
 
@@ -34,11 +34,15 @@ Make a demo based on the following use case:
 
 Make sure all users with different browsers get the minimal functionality based on the principles of Progressive Enhancement.
 
+---
+
 ## Core functionality
 A notification is a broad term as found in the dictionary. It's an act or instance of notifying or giving notice of a event that happened. Most users consider something a notification if:
 * It is purposely different than the normal interface or even outside the UI
 * There is a certain delay in the sending of the notification and the receival
 * It has to trigger some sort of attention (affordance / visual feedback)
+
+---
 
 ## Progressive Enhancement
 
@@ -51,8 +55,10 @@ If `JavaScript` is disabled and only `HTML` (and `CSS`) are loaded the scores wi
 
 `content`: After how much seconds the page should refresh and which page it should redirect to.
 
-### Support
+#### Support
 Supported in effectively all browsers (since IE6+, Firefox 2+, Chrome 1+ etc)
+
+---
 
 ### CSS & JavaScript
 When CSS and JavaScript are both enabled I show a lightbox that simulates a notification.
@@ -64,16 +70,20 @@ document.getElementById('clickLightbox').addEventListener('click', clickLightbox
 
 With the `setTimeout` function I've delayed the firing of the function to delay the dialog.
 
-### Support
+#### Support
 Supported in effectively browsers above `> IE 8`.
 
-## Notification API
+---
+
+### Notification API
 To enhance the experience on Desktop browsers the Notification API is used.
 > The Notifications API allows web pages to control the display of system notifications to the end user — these are outside the top-level browsing context viewport, so therefore can be displayed even the user has switched tabs or moved to a different app. The API is designed to be compatible with existing notification systems across different platforms.
 
 Showing a system notification involves two things:
 * User needs to grant permission to display system notification
 * Then the notification can be created
+
+---
 
 **Constructor**
 `Notification()`: Creates new instance of the Notification object
@@ -84,16 +94,13 @@ Showing a system notification involves two things:
 **Instance properties**
 `title, body etc.`: You can specify options for the styling / actions of the notification.
 
-### Support
-![Can I Use](github/notification_support.png)
+---
 
 ## Accessibility
 ### Color
 I've used Sim Daltonism and Contrast Ratio Checker to check the colors of the User Interface, below are some screenshots:
-![Contrast Ratio Checker](github/color_1.png)
-![Contrast Ratio Checker](github/color_2.png)
-![Sim Daltonism](github/color_3.png)
-![Sim Daltonism](github/color_4.png)
+
+---
 
 ### Tab
 The most important tabbable features are enabling the notifications and closing a notification. Both of them are button in the HTML and they are the only button so they can be tabbed right away.
@@ -106,6 +113,7 @@ The most important to items on the page, clubs and the score I've used the corre
 * The article has a correct header and body
 * `time` tag to indicate the time of the game
 
+---
 
 ## Resources
 * [Can I use](caniuse.com)
