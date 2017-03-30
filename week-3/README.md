@@ -25,7 +25,7 @@ If `JavaScript` is disabled and only `HTML` (and `CSS`) are loaded the scores wi
 `content`: After how much seconds the page should refresh and which page it should redirect to.
 
 ### Support
-Supported [1] in effectively all browsers (since IE6+, Firefox 2+, Chrome 1+ etc)
+Supported in effectively all browsers (since IE6+, Firefox 2+, Chrome 1+ etc)
 
 ### CSS & JavaScript
 When CSS and JavaScript are both enabled I show a lightbox that simulates a notification.
@@ -42,7 +42,7 @@ Supported in effectively browsers above `> IE 8`.
 
 ## Notification API
 To enhance the experience on Desktop browsers the Notification API is used.
-> The Notifications API [2] allows web pages to control the display of system notifications to the end user — these are outside the top-level browsing context viewport, so therefore can be displayed even the user has switched tabs or moved to a different app. The API is designed to be compatible with existing notification systems across different platforms.
+> The Notifications API allows web pages to control the display of system notifications to the end user — these are outside the top-level browsing context viewport, so therefore can be displayed even the user has switched tabs or moved to a different app. The API is designed to be compatible with existing notification systems across different platforms.
 
 Showing a system notification involves two things:
 * User needs to grant permission to display system notification
@@ -62,7 +62,7 @@ Showing a system notification involves two things:
 
 ## Accessibility
 ### Color
-I've used Sim Daltonism [3] and Contrast Ratio Checker [4] to check the colors of the User Interface, below are some screenshots:
+I've used Sim Daltonism and Contrast Ratio Checker to check the colors of the User Interface, below are some screenshots:
 ![Contrast Ratio Checker](github/color_1.png)
 ![Contrast Ratio Checker](github/color_2.png)
 ![Sim Daltonism](github/color_3.png)
@@ -81,12 +81,8 @@ The most important to items on the page, clubs and the score I've used the corre
 
 
 ## Resources
-* Can I use
-* Mozzila Developer Network  
-* Sim Daltonism
-* Contrast Ratio Checker
-
-[1]: (caniuse.com)
-[2]: (https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
-[3]: (https://michelf.ca/projects/sim-daltonism/)
-[4]: (https://leaverou.github.io/contrast-ratio/)
+* [Can I use](caniuse.com)
+* [Mozzila Developer Network](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
+* [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/)
+* [Contrast Ratio Checker](https://leaverou.github.io/contrast-ratio/)
+* [Branding](http://www.eredivisie.nl)
