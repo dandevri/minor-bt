@@ -18,21 +18,26 @@
       <header>
         <h1>Feyenoord vs Ajax</h1>
         <p>Competition: Eredivisie</p>
-        <p><time datetime="20170402T1430">Sunday, 2 April 14:30</time></p>
+        <p><time datetime="20170402T1430">Sunday, 31 March 14:30</time></p>
         <p>Location: Amsterdam ArenA</p>
       </header>
 
       <main>
         <div class="feyenoord">
-          <img src="../img/feyenoord-logo.svg" >
-          <a href ="#feyenoord" onclick="notify()">Enable notification</a>
+          <picture>
+           <source srcset="../img/ajax-logo.svg">
+           <img src="../img/ajax-logo.png">
+          </picture>
         </div>
-        <h2>Score: <br>FEY 1 - 2 AJA</h2>
+        <h2>Score: <br>FEY 1 - 1 AJA</h2>
         <div class="ajax">
-          <img src="../img/ajax-logo.svg">
-          <a href="#ajax" onclick="notify()">Enable notification</a>
+          <picture>
+           <source srcset="../img/feyenoord-logo.svg">
+           <img src="../img/feyenoord-logo.png">
+          </picture>
         </div>
       </main>
+      <button id="clickLightbox" onclick="notify()">Enable notification</button>
     </article>
 
   </body>
