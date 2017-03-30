@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Notification</title>
@@ -13,25 +13,42 @@
   </head>
   <body>
     <!-- Basic HTML-->
-
+    <article>
       <header>
         <h1>Feyenoord vs Ajax</h1>
-        <p>Competitie: Eredivisie</p>
+        <p>Competition: Eredivisie</p>
         <p><time datetime="20170402T1430">Sunday, 2 April 14:30</time></p>
-        <p>Amsterdam ArenA, Amsterdam, Noord-Holland</p>
+        <p>Location: Amsterdam ArenA</p>
       </header>
 
       <main>
         <div class="feyenoord">
           <img src="img/feyenoord-logo.svg" >
-          <button onclick="notify()">Notification if Feyenoord scores.</button>
+          <a href ="#feyenoord" onclick="notify()">Notification if Feyenoord scores.</a>
         </div>
         <h2>Score: <br>Feyenoord 0 - 1 Ajax</h2>
         <div class="ajax">
           <img src="img/ajax-logo.svg">
-          <button onclick="notify()">Notification if Ajax scores.</button>
+          <a href="#ajax" onclick="notify()">Notification if Ajax scores.</a>
         </div>
       </main>
+    </article>
+      <!-- Lightbox -->
+      <div class="lightbox" id="feyenoord">
+        <section class="lightbox">
+          <a href="#" class="closemsg">sluiten ✖</a>
+          <p>Feyenoord heeft een doelpunt gemaakt!</p>
+          <p><strong>De huidige stand is nu 0 -1</strong></p>
+        </section>
+      </div>
+
+      <div class="lightbox" id="ajax">
+        <section class="lightbox">
+          <a href="#" class="closemsg">sluiten ✖</a>
+          <p>Ajax heeft een doelpunt gemaakt!</p>
+          <p><strong>De huidige stand is nu 0 -1</strong></p>
+        </section>
+      </div>
 
     <script src="./js/script.js"></script>
   </body>
