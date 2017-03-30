@@ -10,24 +10,26 @@
   <body>
     <!-- Basic HTML-->
 
+    <article>
       <header>
         <h1>Feyenoord vs Ajax</h1>
-        <p>Competitie: Eredivisie</p>
+        <p>Competition: Eredivisie</p>
         <p><time datetime="20170402T1430">Sunday, 2 April 14:30</time></p>
-        <p>Amsterdam ArenA, Amsterdam, Noord-Holland</p>
+        <p>Location: Amsterdam ArenA</p>
       </header>
 
       <main>
         <div class="feyenoord">
           <img src="../img/feyenoord-logo.svg" >
-          <button onclick="notify()">Notification if Feyenoord scores.</button>
+          <a href ="#feyenoord" onclick="notify()">Enable notification</a>
         </div>
-        <h2>Score: <br>Feyenoord 2 - 2 Ajax</h2>
+        <h2>Score: <br>FEY 2 - 2 AJA</h2>
         <div class="ajax">
           <img src="../img/ajax-logo.svg">
-          <button onclick="notify()">Notification if Ajax scores.</button>
+          <a href="#ajax" onclick="notify()">Enable notification</a>
         </div>
       </main>
+    </article>
 
   </body>
 </html>

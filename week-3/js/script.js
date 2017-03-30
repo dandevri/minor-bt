@@ -32,3 +32,27 @@ function fireNotification(title, body, icon, tag, image) {
 }
 
 askPermission();
+
+function showLightboxAjax() {
+  document.querySelector('.lightbox-ajax').innerHTML =
+  '<section class="lightbox">'
+    + '<button onclick="removeBox()">close ✖</button>'
+    + '<p>Ajax has scored a goal!</p>'
+    + '<p><strong>The current standing is: 0 - 1</strong></p>'
+    +  '</section>'
+
+}
+
+function showLightboxFeyenoord() {
+  document.querySelector('.lightbox-feyenoord').innerHTML =
+  '<section class="lightbox">'
+    + '<button onclick="removeBox()">close ✖</button>'
+    + '<p>Feyenoord has scored a goal!</p>'
+    + '<p><strong>The current standing is: 0 - 1</strong></p>'
+    +  '</section>'
+}
+
+function removeBox() {
+  var removeBox = document.querySelector('.lightbox');
+  removeBox.parentNode.removeChild(removeBox);
+}

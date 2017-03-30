@@ -24,30 +24,21 @@
       <main>
         <div class="feyenoord">
           <img src="img/feyenoord-logo.svg" >
-          <a href ="#feyenoord" onclick="notify()">Notification if Feyenoord scores.</a>
+          <button onclick="notify(); showLightboxFeyenoord()">Enable notification</a>
         </div>
-        <h2>Score: <br>Feyenoord 0 - 1 Ajax</h2>
+        <h2>Score: <br>FEY 0 - 1 AJA</h2>
         <div class="ajax">
           <img src="img/ajax-logo.svg">
-          <a href="#ajax" onclick="notify()">Notification if Ajax scores.</a>
+          <button onclick="notify(); showLightboxAjax()">Enable notification</a>
         </div>
       </main>
     </article>
+
       <!-- Lightbox -->
-      <div class="lightbox" id="feyenoord">
-        <section class="lightbox">
-          <a href="#" class="closemsg">sluiten ✖</a>
-          <p>Feyenoord heeft een doelpunt gemaakt!</p>
-          <p><strong>De huidige stand is nu 0 -1</strong></p>
-        </section>
+      <div class="lightbox-ajax">
       </div>
 
-      <div class="lightbox" id="ajax">
-        <section class="lightbox">
-          <a href="#" class="closemsg">sluiten ✖</a>
-          <p>Ajax heeft een doelpunt gemaakt!</p>
-          <p><strong>De huidige stand is nu 0 -1</strong></p>
-        </section>
+      <div class="lightbox-feyenoord">
       </div>
 
     <script src="./js/script.js"></script>
