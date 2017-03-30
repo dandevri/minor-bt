@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <!-- Basic HTML-->
@@ -16,11 +17,15 @@
       </header>
 
       <main>
-        <img src="img/feyenoord-logo.svg" >
-        <button onclick="notify()">Notification if Feyenoord scores.</button>
-        <h2>De score is: <br>Feyenoord 1 - 0 Ajax</h2>
-        <img src="img/ajax-logo.svg">
-        <button onclick="notify()">Notification if Ajax scores.</button>
+        <div class="feyenoord">
+          <img src="img/feyenoord-logo.svg" >
+          <button onclick="notify()">Notification if Feyenoord scores.</button>
+        </div>
+        <h2>Score: <br>Feyenoord 0 - 1 Ajax</h2>
+        <div class="ajax">
+          <img src="img/ajax-logo.svg">
+          <button onclick="notify()">Notification if Ajax scores.</button>
+        </div>
       </main>
 
     <script src="./js/script.js"></script>
