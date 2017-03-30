@@ -40,46 +40,43 @@ body {
 }
 
 main {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   background-color: white;
   padding: 2em;
   color: black;
 }
 
 article {
-  width: 50vw;
+  width: 70vw;
 }
 
 /* ==========================================================================
    Lightbox
    ========================================================================== */
-
-div.lightbox {
-  display: none;
+.lightbox {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-}
-
-div.lightbox:target {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-
-div.lightbox section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
-div.lightbox section a {
-  text-align: right;
-}
-
-section.lightbox {
-  background-color: white;
-  padding: 2em;
+.lightbox::after {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.80;
+  z-index: -1;
 }
