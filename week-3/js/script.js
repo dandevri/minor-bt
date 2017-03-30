@@ -3,6 +3,7 @@ console.log('%c Such develop such wow you opened the console. ✨', styles);
 
 function notify() {
   if (!("Notification" in window)) {
+    alert("Unfortunately you browser doesn't support browser notifications. :( However you can still use our default notifications.")
     clickLightbox();
   } else {
     fireNotification('FEY 0 - 1 AJA', 'Ajax has scored a goal!', 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
