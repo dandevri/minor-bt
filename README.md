@@ -31,3 +31,6 @@ TODO's and finished tasks can be found here: [GitHub projects](https://github.co
 [HTML, CSS and JS feature detection](https://github.com/dandevri/minor-bt/tree/master/week-2/)
 
 [Notes from the articles](https://dandevri.gitbooks.io/minor-bt/content/resources.html)
+
+### Week 3
+[Feature Detection - Use Case](https://github.com/dandevri/minor-bt/tree/master/week-3/)
