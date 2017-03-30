@@ -4,7 +4,8 @@
 
 function notify() {
   if (!("Notification" in window)) {
-    alert("This browser does not support desktop notification");
+    clickDing();
+    clickDing2();
   } else {
     fireNotification('Titel', 'Body', 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
   }
@@ -33,24 +34,36 @@ function fireNotification(title, body, icon, tag, image) {
 
 askPermission();
 
-function showLightboxAjax() {
-  document.querySelector('.lightbox-ajax').innerHTML =
-  '<section class="lightbox">'
-    + '<button onclick="removeBox()">close ✖</button>'
-    + '<p>Ajax has scored a goal!</p>'
-    + '<p><strong>The current standing is: 0 - 1</strong></p>'
-    +  '</section>'
-
+function clickAjax() {
+  setTimeout(
+    function() {
+      document.querySelector('.lightbox-ajax').innerHTML =
+      '<div class="lightbox">'
+      + '<button onclick="removeBox()">close ✖</button>'
+      + '<p>Ajax has scored a goal!</p>'
+      + '<p><strong>The current standing is: 0 - 1</strong></p>'
+      +  '</div>';
+    }, 3000
+  )
 }
 
-function showLightboxFeyenoord() {
-  document.querySelector('.lightbox-feyenoord').innerHTML =
-  '<section class="lightbox">'
-    + '<button onclick="removeBox()">close ✖</button>'
-    + '<p>Feyenoord has scored a goal!</p>'
-    + '<p><strong>The current standing is: 0 - 1</strong></p>'
-    +  '</section>'
+document.getElementById('clickAjax').addEventListener('click', clickAjax, false);
+
+
+function clickFeyenoord() {
+  setTimeout(
+    function() {
+      document.querySelector('.lightbox-feyenoord').innerHTML =
+      '<div class="lightbox">'
+      + '<button onclick="removeBox()">close ✖</button>'
+      + '<p>Feyenoord has scored a goal!</p>'
+      + '<p><strong>The current standing is: 0 - 1</strong></p>'
+      +  '</div>';
+    }, 3000
+  )
 }
+document.getElementById('clickFeyenoord').addEventListener('click', clickFeyenoord, false);
+
 
 function removeBox() {
   var removeBox = document.querySelector('.lightbox');
