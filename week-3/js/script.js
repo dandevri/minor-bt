@@ -1,13 +1,11 @@
-// Le Fun Stuff
-// var styles = [, 'color: hotpink;', 'display: block', 'line-height: 40px', 'text-align: center', 'font-weight: bold', 'font-size: 2em'].join(';');
-// console.log('%c Such develop such wow you opened the console. ✨', styles);
+var styles = [, 'color: hotpink;', 'display: block', 'line-height: 40px', 'text-align: center', 'font-weight: bold', 'font-size: 2em'].join(';');
+console.log('%c Such develop such wow you opened the console. ✨', styles);
 
 function notify() {
   if (!("Notification" in window)) {
-    clickDing();
-    clickDing2();
+    clickLightbox();
   } else {
-    fireNotification('Titel', 'Body', 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
+    fireNotification('FEY 0 - 1 AJA', 'Ajax has scored a goal!', 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
   }
 }
 
@@ -27,43 +25,29 @@ function fireNotification(title, body, icon, tag, image) {
     icon: icon,
     tag: tag,
     image: image,
-    // requireInteraction: true
+    requireInteraction: true
   }
   var notification = new Notification(title, options);
 }
 
 askPermission();
 
-function clickAjax() {
+function clickLightbox() {
   setTimeout(
     function() {
       document.querySelector('.lightbox-ajax').innerHTML =
       '<div class="lightbox">'
+      + '<div class="box">'
       + '<button onclick="removeBox()">close ✖</button>'
       + '<p>Ajax has scored a goal!</p>'
       + '<p><strong>The current standing is: 0 - 1</strong></p>'
       +  '</div>';
-    }, 3000
-  )
-}
-
-document.getElementById('clickAjax').addEventListener('click', clickAjax, false);
-
-
-function clickFeyenoord() {
-  setTimeout(
-    function() {
-      document.querySelector('.lightbox-feyenoord').innerHTML =
-      '<div class="lightbox">'
-      + '<button onclick="removeBox()">close ✖</button>'
-      + '<p>Feyenoord has scored a goal!</p>'
-      + '<p><strong>The current standing is: 0 - 1</strong></p>'
       +  '</div>';
     }, 3000
   )
 }
-document.getElementById('clickFeyenoord').addEventListener('click', clickFeyenoord, false);
 
+document.getElementById('clickLightbox').addEventListener('click', clickLightbox, false);
 
 function removeBox() {
   var removeBox = document.querySelector('.lightbox');
