@@ -13,7 +13,6 @@ function notify() {
 function askPermission() {
   // Check if something is not `denied` so that means `default` or `granted`.
   if (Notification.permission !== "denied") {
-    console.log(Notification.permission);
     // API knows it doesn't need to ask for permission if `granted`.
     Notification.requestPermission();
   }
@@ -26,7 +25,6 @@ function fireNotification(title, body, icon, tag, image) {
     icon: icon,
     tag: tag,
     image: image,
-    requireInteraction: true
   }
   var notification = new Notification(title, options);
 }

@@ -48,6 +48,8 @@ main {
   text-align: center;
   background-color: #f3f3f3;
   color: #0e4194;
+  flex-wrap: wrap;
+  padding: 1em;
 }
 
 main > * {
