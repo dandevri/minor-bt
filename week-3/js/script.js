@@ -1,6 +1,6 @@
 // Le Fun Stuff
-var styles = [, 'color: hotpink;', 'display: block', 'line-height: 40px', 'text-align: center', 'font-weight: bold', 'font-size: 2em'].join(';');
-console.log('%c Such develop such wow you opened the console. ✨', styles);
+// var styles = [, 'color: hotpink;', 'display: block', 'line-height: 40px', 'text-align: center', 'font-weight: bold', 'font-size: 2em'].join(';');
+// console.log('%c Such develop such wow you opened the console. ✨', styles);
 
 function notify() {
   if (!("Notification" in window)) {

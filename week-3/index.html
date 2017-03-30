@@ -2,11 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Notifications</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <button onclick="notify()">Great success</button>
+    <!-- Basic HTML-->
+
+      <header>
+        <h1>Feyenoord vs Ajax</h1>
+        <p>Competitie: Eredivisie</p>
+        <p><time datetime="20170402T1430">Sunday, 2 April 14:30</time></p>
+        <p>Amsterdam ArenA, Amsterdam, Noord-Holland</p>
+      </header>
+
+      <main>
+        <img src="img/feyenoord-logo.svg" >
+        <button onclick="notify()">Notification if Feyenoord scores.</button>
+        <h2>De score is: <br>Feyenoord 1 - 0 Ajax</h2>
+        <img src="img/ajax-logo.svg">
+        <button onclick="notify()">Notification if Ajax scores.</button>
+      </main>
+
+    <script src="./js/script.js"></script>
   </body>
-  <script src="./js/script.js"></script>
 </html>
