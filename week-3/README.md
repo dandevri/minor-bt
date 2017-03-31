@@ -62,6 +62,15 @@ Showing a system notification involves two things:
 ### Support
 ![Can I Use](github/notification_support.png)
 
+## Cross Browser
+**Edge**  
+![Browser Edge](github/browser_edge1.jpg)
+![Browser Edge](github/browser_edge2.jpg)
+
+**Internet Explorer 10/11**
+![Browser Edge](github/browser_ie11.jpg)
+
+
 ## Accessibility
 ### Color
 I've used Sim Daltonism and Contrast Ratio Checker to check the colors of the User Interface, below are some screenshots:
