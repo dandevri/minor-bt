@@ -1,4 +1,6 @@
-# Browser Technologies - Progressive Enhancement
+# ⚽️ Eredivisie Notifications
+
+![GitHub Banner](github/github_banner.png)
 
 ## Briefing
 Make a demo based on the following use case:
