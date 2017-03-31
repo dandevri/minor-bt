@@ -76,15 +76,24 @@ header {
    ========================================================================== */
 
 button {
-  background-color: #009fe3;
+  background-color: #fff;
+  border: .1em solid #009fe3;
   width: 100%;
   padding: 1em 0em;
   font-size: 1em;
-  color: white;
-  border: none;
+  color: #009fe3;
   margin-top: 1em;
+  transition: all 300ms;
 }
 
+button:hover, button:active {
+  background-color: #009fe3;
+  color: white;
+}
+
+button:focus {
+  border: 2px solid hotpink;
+}
 /* ==========================================================================
    Lightbox
    ========================================================================== */
