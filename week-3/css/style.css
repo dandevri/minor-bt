@@ -103,7 +103,7 @@ button:focus {
 /* ==========================================================================
    Lightbox
    ========================================================================== */
-.lightbox {
+#lightbox {
   position: fixed;
   left: 0;
   top: 0;
@@ -116,7 +116,7 @@ button:focus {
   z-index: 2;
 }
 
-.lightbox::after {
+#lightbox::after {
   content: "";
   display: block;
   position: fixed;
