@@ -1,12 +1,12 @@
 var styles = [, 'color: hotpink;', 'display: block', 'line-height: 40px', 'text-align: center', 'font-weight: bold', 'font-size: 2em'].join(';');
 console.log('%c Such develop such wow you opened the console. ✨', styles);
 
-function notify() {
+function notify(id) {
   if (!("Notification" in window)) {
     alert("Unfortunately you browser doesn't support browser notifications. :( However you can still use our default notifications.")
     clickLightbox();
   } else {
-    fireNotification('Ajax has scored!', `FEY ` + db.get(1).FEY + ` - ` + db.get(1).AJA + ` AJA`, 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
+    fireNotification('Ajax has scored!', `FEY ` + db.get(id).FEY + ` - ` + db.get(id).AJA + ` AJA`, 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
   }
 }
 
@@ -31,7 +31,15 @@ function fireNotification(title, body, icon, tag, image) {
 
 askPermission();
 
-function clickLightbox() {
+function updateDOM(id) {
+  document.getElementsByTagName('H2')[0].innerHTML =
+  'Score: '
+  + 'FEY ' + db.get(id).FEY
+  + ' - '
+  + 'AJA ' + db.get(id).AJA
+};
+
+function clickLightbox(id) {
   setTimeout(
     function() {
       document.querySelector('.lightbox-ajax').innerHTML =
@@ -40,14 +48,21 @@ function clickLightbox() {
       + '<button onclick="removeBox()">close ✖</button>'
       + '<p>Ajax has scored a goal!</p>'
       + '<p><strong>The current standing is:</strong></p>'
-      +  `<p>FEY ` + db.get(1).FEY + ` - ` + db.get(1).AJA + ` AJA</p>`
+      +  `<p>FEY ` + db.get(id).FEY + ` - ` + db.get(id).AJA + ` AJA</p>`
       +  '</div>';
       +  '</div>';
     }, 3000
   )
 }
 
-document.getElementById('clickLightbox').addEventListener('click', clickLightbox, false);
+var counter = 0;
+
+document.getElementById('clickLightbox').onclick = function() {
+  notify(counter);
+  clickLightbox(counter);
+  updateDOM(counter);
+  counter++;
+};
 
 function removeBox() {
   var removeBox = document.querySelector('.lightbox');

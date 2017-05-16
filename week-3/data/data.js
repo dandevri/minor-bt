@@ -12,6 +12,7 @@ var db = {
   data: {}
 }
 
-db.put(1, {FEY: '0', AJA: '1'});
-db.put(2, {FEY: '0', AJA: '2'});
-console.log(db.get(1));
+// Scores in data object
+db.put(0, {FEY: '0', AJA: '1'});
+db.put(1, {FEY: '1', AJA: '1'});
+db.put(2, {FEY: '1', AJA: '2'});
