@@ -34,9 +34,10 @@ askPermission();
 function updateDOM(id) {
   document.getElementsByTagName('H2')[0].innerHTML =
   'Score: '
+  + '<br>'
   + 'FEY ' + db.get(id).FEY
   + ' - '
-  + 'AJA ' + db.get(id).AJA
+  + db.get(id).AJA + ' AJA'
 };
 
 function clickLightbox(id) {
