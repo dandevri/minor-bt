@@ -1,0 +1,17 @@
+//Database object
+var db = {
+  // Put request simulate
+  put: function(id, data) {
+    this.data[id] = data;
+  },
+  // Get request simulate
+  get: function(id) {
+    return this.data[id];
+  },
+  // Store data object
+  data: {}
+}
+
+db.put(1, {FEY: '0', AJA: '1'});
+db.put(2, {FEY: '0', AJA: '2'});
+console.log(db.get(1));

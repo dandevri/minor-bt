@@ -6,7 +6,7 @@ function notify() {
     alert("Unfortunately you browser doesn't support browser notifications. :( However you can still use our default notifications.")
     clickLightbox();
   } else {
-    fireNotification('FEY 0 - 1 AJA', 'Ajax has scored a goal!', 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
+    fireNotification('Ajax has scored!', `FEY ` + db.get(1).FEY + ` - ` + db.get(1).AJA + ` AJA`, 'img/ajax-icon.png', 'ned-bul', 'img/ajax.jpg');
   }
 }
 
@@ -39,7 +39,8 @@ function clickLightbox() {
       + '<div class="box">'
       + '<button onclick="removeBox()">close ✖</button>'
       + '<p>Ajax has scored a goal!</p>'
-      + '<p><strong>The current standing is: 0 - 1</strong></p>'
+      + '<p><strong>The current standing is:</strong></p>'
+      +  `<p>FEY ` + db.get(1).FEY + ` - ` + db.get(1).AJA + ` AJA</p>`
       +  '</div>';
       +  '</div>';
     }, 3000
