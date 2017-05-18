@@ -14,7 +14,7 @@
   <body>
 
     <!-- Basic HTML-->
-    <article>
+    <div class="wrapper">
       <header>
         <h1>Feyenoord vs Ajax</h1>
         <p>Competition: Eredivisie</p>
@@ -38,13 +38,12 @@
         </div>
       </main>
       <button id="clickLightbox">Enable notification</button>
-    </article>
+    </div>
 
       <!-- Lightbox -->
-      <section class="lightbox-feyenoord"></section>
-      <section class="lightbox-ajax"></section>
+      <div id="lightboxajax" class="lightbox-ajax"></div>
 
-      <script src="./data/data.js"></script>
-    <script src="./js/script.js"></script>
+      <script type="text/javascript" src="./data/data.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
