@@ -26,18 +26,25 @@ function fireNotification(title, body, icon, tag, image) {
     tag: tag,
     image: image,
   }
-  var notification = new Notification(title, options);
+  setTimeout(function() {
+      var notification = new Notification(title, options);
+    }, 3000
+  )
 }
 
 askPermission();
 
 function updateDOM(id) {
-  document.getElementsByTagName('H2')[0].innerHTML =
-  'Score: '
-  + '<br>'
-  + 'FEY ' + db.get(id).FEY
-  + ' - '
-  + db.get(id).AJA + ' AJA'
+  setTimeout(
+    function() {
+      document.getElementsByTagName('H2')[0].innerHTML =
+      'Score: '
+      + '<br>'
+      + 'FEY ' + db.get(id).FEY
+      + ' - '
+      + db.get(id).AJA + ' AJA'
+    }, 3000
+  )
 };
 
 // Use getElementBy for Internet Explorer
@@ -59,8 +66,13 @@ function clickLightbox(id) {
 
 var element = document.getElementById('clickLightbox');
 
-// AttachEvent for older IE
-element.attachEvent("onclick", onButtonClick);
+// Check if attachEvent is in window
+if (window.attachEvent) {
+  // AttachEvent for older IE
+  element.attachEvent("onclick", onButtonClick);
+} else {
+  element.onclick = onButtonClick;
+}
 
 var counter = 0;
 
